@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kabil Pranav K - Projects</title>
+    <link rel="icon" href="img.jpg">
+    <style>
+        /* General styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 3px solid #0099ff;
+        }
+        header h1 {
+            margin: 0;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 20px;
+        }
+        header nav {
+            margin-top: 10px;
+        }
+        header ul {
+            list-style: none;
+            padding: 0;
+        }
+        header ul li {
+            display: inline;
+            padding: 0 10px;
+        }
+        header ul li a:hover {
+            color: #0099ff;
+        }
+
+        /* Main section styling */
+        #main {
+            padding: 50px 0;
+            background-color: #fff;
+        }
+        #main h1 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #333;
+        }
+        .project {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        .project h3 {
+            margin-top: 0;
+            color: #0099ff;
+            font-size: 24px;
+        }
+        .project p {
+            font-size: 16px;
+            color: #555;
+        }
+        .project button {
+            background-color: #0099ff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .project button:hover {
+            background-color: #007acc;
+        }
+        .project-details {
+            display: none;
+            padding-top: 10px;
+        }
+        .project-details h4 {
+            color: #333;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .project-details p {
+            color: #555;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            header ul li {
+                display: block;
+                margin: 10px 0;
+            }
+            .container {
+                width: 100%;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Kabil Pranav K</h1>
+            <nav>
+                <ul>
+                    <li><a href="portfolio.html">Home</a></li>
+                    <li class="current"><a href="projects.html">Projects</a></li>
+                    <li><a href="certificates.html">Certifications</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="main">
+        <div class="container">
+            <h1>My Projects</h1>
+            
+            <div class="project">
+                <h3>Project 1: Autonomous Navigation System (On Development)</h3>
+                <p>A campus navigation system that uses GPS and onboard sensors for autonomous driving, allowing visitors to easily select their destination via a touchscreen.</p>
+                <button onclick="toggleDetails('project1')">See Details</button>
+                <div id="project1" class="project-details">
+                    <h4>Project Details</h4>
+                    <p>This project involves designing an autonomous vehicle system equipped with GPS and sensors to navigate the campus. The vehicle features a touchscreen interface and can be manually controlled through a web app.</p>
+                </div>
+            </div>
+
+            <div class="project">
+                <h3>Project 2: Smart Energy Meter</h3>
+                <p>A prepaid energy meter system that allows users to track and manage energy consumption with real-time calculations based on current and voltage sensors.</p>
+                <button onclick="toggleDetails('project2')">See Details</button>
+                <div id="project2" class="project-details">
+                    <h4>Project Details</h4>
+                    <p>This smart energy meter calculates energy consumption in real time using voltage and current sensors, providing users with detailed insights into their usage. The system is prepaid, ensuring that users can monitor and control their energy usage.</p>
+                </div>
+            </div>
+
+            <div class="project">
+                <h3>Project 3: Discord Chat Bot (On Development)</h3>
+                <p> A friendly Discord bot designed to provide emotional support and share
+                    positivity with users. Whether you need a bit of inspiration, a boost of
+                    encouragement, or some mood-elevating music</p>
+                <button onclick="toggleDetails('project3')">See Details</button>
+                <div id="project3" class="project-details">
+                    <h4>Project Details</h4>
+                    <p>This project is a mental wellness and mood-lifting Discord bot that interacts with users based on the mood keywords it detects in messages. It can recognize words associated with emotions like sadness, happiness, and love, responding with encouraging messages or suggesting music to match the user’s mood. Additionally, the bot provides inspirational quotes from an API and responds to greetings with friendly messages. It operates using secure environment variables and includes a function to keep the bot online continuously. This project creates a supportive, interactive companion for users on Discord.</p>
+                </div>
+            </div>
+
+            <div class="project">
+                <h3>Project 4:  Enhancing IoT Network Security: Machine Learning Solutions for
+                    Securing RPL-Based IoT Networks</h3>
+                <p> This research develops a machine learning model to detect routing attacks in
+                    RPL networks, including new threats. It uses network traffic data to
+                    demonstrate accuracy and resilience against diverse attack forms, enhancing
+                    overall network security.</p>
+                <button onclick="toggleDetails('project4')">See Details</button>
+                <div id="project4" class="project-details">
+                    <h4>Project Details</h4>
+                    <p>In this project, you focused on enhancing IoT network security by developing machine learning models to detect and resist routing attacks within RPL-based IoT networks. Through simulation using NetSim, you generated a dataset representing various types of routing attacks, including sinkhole and blackhole attacks. The ML models, particularly Random Forest and Support Vector Machine, demonstrated a high accuracy rate of 96%, effectively identifying and mitigating potential network vulnerabilities. This project showcases your ability to apply ML-based solutions to secure IoT networks and improve their reliability.</p>
+                </div>
+            </div>
+
+            <div class="project">
+                <h3>Project 5: Life Expectancy Prediction</h3>
+                <p> This project mainly focuses on predicting the life expectancy of a person using
+                    ML algorithm in python. </p>
+                <button onclick="toggleDetails('project5')">See Details</button>
+                <div id="project5" class="project-details">
+                    <h4>Project Details</h4>
+                    <p>This project leverages machine learning to predict life expectancy, assisting policymakers and health organizations in making data-driven decisions. Using a dataset from the WHO with over 20 features, including economic, lifestyle, and healthcare factors, we applied multiple machine learning algorithms—Linear Regression, Random Forest, Decision Tree, and Ridge Regression. Among these, Random Forest provided the best accuracy at 95%, identifying key patterns and risk factors linked to life expectancy. Exploratory Data Analysis (EDA) tools, such as heatmaps and scatter plots, were utilized to understand relationships in the data, providing a robust basis for predictive modeling.</p>
+                </div>
+            </div>
+
+            <div class="project">
+                <h3>Project 6: Attendance Marking System</h3>
+                <p>A Smart Attendance System that automates real-time attendance tracking with secure, user-friendly data management for enhanced accuracy and efficiency.</p>
+                <button onclick="toggleDetails('project6')">See Details</button>
+                <div id="project6" class="project-details">
+                    <h4>Project Details</h4>
+                    <p>This project involves a Smart Attendance System designed to automate attendance tracking efficiently and accurately. Utilizing a combination of hardware and software components, the system captures and logs attendance data in real-time, minimizing manual input and errors. Key features include secure data storage, user authentication, and easy access to attendance records for both administrators and users. The system's seamless integration and user-friendly interface streamline attendance management, making it a reliable tool for educational institutions and workplaces to enhance productivity and accountability.</p>
+                </div>
+            </div>
+
+            <div class="project">
+                <h3>Project 7: Star Explorer</h3>
+                <p>An intelligent robot equipped with autonomous navigation through dynamic environments.</p>
+                <button onclick="toggleDetails('project7')">See Details</button>
+                <div id="project7" class="project-details">
+                    <h4>Project Details</h4>
+                    <p>**Summary**: The *Star Explorer* project implements a grid-based pathfinding robot that detects obstacles and calculates the shortest path to a destination. Using randomized obstacle generation within a matrix, the robot's algorithm assigns path markers to navigate the grid. The robot checks adjacent cells for obstacles, updating its position and recalculating routes as needed, allowing it to find a clear and efficient route to its target. The project’s modular code structure ensures easy configuration of grid size, obstacle placement, and robot movement parameters.</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Kabil Pranav K. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleDetails(projectId) {
+            var details = document.getElementById(projectId);
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

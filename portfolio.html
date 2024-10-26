@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kabil Pranav K - Portfolio</title>
+    <link rel="icon" href="img.jpg">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #0099ff 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header .highlight, header .current a {
+            color: #0099ff;
+            font-weight: bold;
+        }
+        header a:hover {
+            color: #cccccc;
+            font-weight: bold;
+        }
+        #showcase {
+            min-height: 400px;
+            display: flex;
+            justify-content: space-between; /* Ensures the text and image are on opposite sides */
+            align-items: center;
+            background: #e4e4e4;
+        }
+        #showcase .text-content {
+            width: 50%;
+            text-align: left;
+            color: #241f1f;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        #showcase h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        #showcase p {
+            font-size: 20px;
+        }
+        #showcase .image-container {
+            width: 50%;
+            display: flex;
+            justify-content:left; /* Aligns the image to the right */
+            align-items: center;
+        }
+        #showcase img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 50%; /* Makes the image circular */
+        }
+        #main {
+            padding: 30px 0;
+            background: #fff;
+        }
+        #main .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        #main-col {
+            flex: 2;
+            padding-right: 30px;
+        }
+        #sidebar {
+            flex: 1;
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        footer {
+            padding: 20px;
+            background: #333;
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Kabil Pranav K</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="portfolio.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="certificates.html">Certifications</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <div class="image-container">
+                <img src="C:\Users\kabil\Downloads\WhatsApp Image 2024-07-17 at 13.19.43_4ca22c36.jpg" alt="Kabil Pranav K">
+            </div>
+            <div class="text-content">
+                <h1>Welcome to My Portfolio</h1>
+                <p>Showcasing my skills, projects, and achievements</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="main">
+        <div class="container">
+            <div id="main-col">
+                <h2>About Me</h2>
+                <p>A specialized Computer and Communication engineer with expertise in C, Python, and front-end development. Possesses
+                    strong interpersonal skills, excels in team problem-solving, and has a blend of analytical and creative thinking for effective
+                    troubleshooting. Experienced in software development with a keen interest in learning, contributing, and growing within
+                    an organization to enhance domain expertise.
+                </p>
+            </div>
+            <div id="sidebar">
+                <h3>Contact Information</h3>
+                <p>Email: kabilpranavk@gmail.com</p>
+                <p>Phone: +91 9150230006</p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/kabil-pranav-k-982b55217/">Kabil Pranav K</a></p>
+                <p>GitHub: <a href="https://github.com/Kabil-Pranav-K">Kabil Pranav K</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Kabil Pranav K. All rights reserved.</p>
+    </footer>
+</body>
+</html>

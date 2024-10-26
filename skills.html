@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kabil Pranav K - Skills</title>
+    <link rel="icon" href="img.jpg">
+    <style>
+        /* General styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            width: 85%;
+            margin: auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 4px solid #0099ff;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 15px;
+        }
+        header nav {
+            margin-top: 10px;
+        }
+        header ul {
+            list-style: none;
+            padding: 0;
+        }
+        header ul li {
+            display: inline;
+            padding: 0 10px;
+        }
+        header ul li a:hover {
+            color: #0099ff;
+        }
+        header ul li.current a {
+            color: #0099ff;
+            font-weight: bold;
+        }
+
+        /* Skills section styling */
+        #main {
+            padding: 60px 0;
+            background-color: #fff;
+        }
+        #main h1 {
+            font-size: 36px;
+            margin-bottom: 40px;
+            text-align: center;
+            color: #333;
+        }
+        .skill {
+            background: #f4f4f4;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .skill:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .skill h3 {
+            margin: 0;
+            color: #0099ff;
+            font-size: 24px;
+        }
+        .skill-details {
+            display: none;
+            background: #e4e4e4;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 5px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            header ul li {
+                display: block;
+                margin: 10px 0;
+            }
+            .container {
+                width: 95%;
+                padding: 10px;
+            }
+            #main {
+                padding: 40px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Kabil Pranav K</h1>
+            <nav>
+                <ul>
+                    <li><a href="portfolio.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="certificates.html">Certifications</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li class="current"><a href="skills.html">Skills</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="main">
+        <div class="container">
+            <h1>My Skills</h1>
+            <div class="skill" onclick="toggleSkillDetails('skill1')">
+                <h3>Python Programming</h3>
+                <div id="skill1" class="skill-details">
+                    <h4>How I acquired this skill:</h4>
+                    <p>I gained proficiency in Python through formal education and practical experience in various projects such as developing automation scripts, web apps, and data analysis tools.</p>
+                    <h4>Projects related to this skill:</h4>
+                    <ul>
+                        <li>Life Expectancy Prediction</li>
+                        <li>Attendance System Development</li>
+                        <li>Discord Chat Bot</li>
+                        <li>Enhancing IoT Network Security: Machine Learning Solutions for
+                            Securing RPL-Based IoT Networks</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skill" onclick="toggleSkillDetails('skill2')">
+                <h3>Cloud Computing</h3>
+                <div id="skill2" class="skill-details">
+                    <h4>How I acquired this skill:</h4>
+                    <p>I completed AWS certification and worked on several cloud-based applications focusing on AWS EC2, S3, and scaling virtual environments.</p>
+                    <h4>Projects related to this skill:</h4>
+                    <ul>
+                        <li>Attendance Marking System</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skill" onclick="toggleSkillDetails('skill3')">
+                <h3>Html & CSS</h3>
+                <div id="skill3" class="skill-details">
+                    <h4>How I acquired this skill:</h4>
+                    <p>I completed certification and worked on several projects which improved my skills in this area.</p>
+                    <h4>Projects related to this skill:</h4>
+                    <ul>
+                        <li>Attendance Marking System</li>
+                        <li>Portfolio</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skill" onclick="toggleSkillDetails('skill4')">
+                <h3>SQL</h3>
+                <div id="skill4" class="skill-details">
+                    <h4>How I acquired this skill:</h4>
+                    <p>I have practiced several queries in Leetcode.</p>
+                </div>
+            </div>
+            <div class="skill" onclick="toggleSkillDetails('skill5')">
+                <h3>C Programming</h3>
+                <div id="skill5" class="skill-details">
+                    <h4>How I acquired this skill:</h4>
+                    <p>I have practiced and worked on a project in this programming.</p>
+                    <h4>Projects related to this skill:</h4>
+                    <ul>
+                        <li>Star Explorer</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skill" onclick="toggleSkillDetails('skill6')">
+                <h3>Matlab</h3>
+                <div id="skill6" class="skill-details">
+                    <h4>How I acquired this skill:</h4>
+                    <p>I have Completed course on it.</p>
+                </div>
+            </div>
+            <div class="skill" onclick="toggleSkillDetails('skill7')">
+                <h3>Simulink</h3>
+                <div id="skill7" class="skill-details">
+                    <h4>How I acquired this skill:</h4>
+                    <p>I have completed course on it.</p>
+                </div>
+            </div>
+            <div class="skill" onclick="toggleSkillDetails('skill8')">
+                <h3>Email Writing</h3>
+                <div id="skill8" class="skill-details">
+                    <h4>How I acquired this skill:</h4>
+                    <p>I have completed course on it which is offered by Infosys.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Kabil Pranav K. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleSkillDetails(skillId) {
+            var details = document.getElementById(skillId);
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
